@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#04060c"><meta name="description" content="SIDOU_SHOP16 — سوق حسابات الألعاب في الجزائر">
+<title>SIDOU_SHOP16 | Gaming Accounts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04060c;--line:#18306b;--blue:#2f7bff;--cyan:#22d3ee;--text:#f4f7ff;--muted:#9fb0d3;--green:#22d66f;--gold:#ffce54;--red:#ff5d73;--glow:0 0 30px #2f7bff55}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Cairo,system-ui,Arial,sans-serif;line-height:1.7;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 400px at 85% 0,#1b4fd155,transparent 70%),radial-gradient(500px 400px at 5% 40%,#22d3ee22,transparent 70%),radial-gradient(700px 500px at 50% 110%,#2f7bff2e,transparent 70%)}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}[hidden]{display:none!important}
+.container{width:min(1200px,92%);margin:auto}
+.logo{font-family:Orbitron,Cairo,sans-serif;font-weight:900;letter-spacing:1px;direction:ltr;display:inline-block;white-space:nowrap}
+.logo b{background:linear-gradient(90deg,#4f8dff,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+.announce{background:linear-gradient(90deg,#0b46d8,#22a6d3);color:#fff;text-align:center;padding:7px 12px;font-weight:700;font-size:.88rem}
+header{position:sticky;top:0;z-index:50;background:#04060ccc;backdrop-filter:blur(16px);border-bottom:1px solid #16275a}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px}.brand .mark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#2f7bff,#22d3ee);color:#021028;font-family:Orbitron;font-weight:900;box-shadow:var(--glow)}
+.brand .logo{font-size:1.25rem}.brand small{display:block;color:#7f97d0;font-size:.58rem;letter-spacing:4px;margin-top:-6px;direction:ltr;text-align:left}
+nav{display:flex;gap:6px;align-items:center;font-size:.9rem}nav a{padding:7px 12px;border-radius:10px;color:#cfd9f5;transition:.2s}nav a:hover{background:#12214a}
+.navright{display:flex;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid transparent;padding:10px 16px;border-radius:12px;font-weight:800;transition:.2s;color:inherit}
+.btn:hover{transform:translateY(-2px)}.btn:disabled{opacity:.55;cursor:wait;transform:none}
+.primary{background:linear-gradient(135deg,#2f7bff,#0b46d8);color:#fff;box-shadow:0 8px 24px #1458ff44}
+.outline{border-color:#2d4580;background:#0a1226cc;color:#eaf1ff}.green{background:var(--green);color:#03210e}.mutedbtn{background:#111c36;border-color:#263c6c;color:#e6edff}.danger{background:#2a0f19;border-color:#7a2336;color:#ff9aa8}
+.sm{padding:6px 11px;font-size:.82rem;border-radius:10px}
+.heartico{width:18px;height:18px;fill:#ff6d9c;stroke:#ff6d9c;stroke-width:1.5;stroke-linejoin:round}
+.hero{position:relative;margin:26px auto 18px;border:1px solid #21489f;border-radius:28px;overflow:hidden;padding:clamp(28px,6vw,72px);background:linear-gradient(120deg,#030610f5,#08163bd9 60%,#04091ccc);box-shadow:0 30px 90px #00205e44}
+.hero:before{content:"";position:absolute;width:520px;height:520px;right:-120px;top:-160px;background:radial-gradient(circle,#2f7bff66,transparent 65%);animation:float 9s ease-in-out infinite}
+.hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(circle at 80% 20%,#000,transparent 70%);mask-image:radial-gradient(circle at 80% 20%,#000,transparent 70%);pointer-events:none}
+@keyframes float{50%{transform:translate(-30px,30px)}}
+.hero-in{position:relative;z-index:1;max-width:760px}
+.eyebrow,.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid #2a56b8;background:#08142fcc;color:#a9c6ff;border-radius:999px;padding:5px 13px;font-size:.8rem;font-weight:700}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);animation:pulse 1.6s infinite}@keyframes pulse{50%{opacity:.35}}
+.hero-name{font-size:clamp(2.2rem,8.5vw,5.6rem);line-height:1.05;margin:20px 0 6px;filter:drop-shadow(0 0 28px #2f7bff66)}
+.hero-sub{font-size:clamp(1.2rem,3vw,2rem);font-weight:900;margin:0 0 10px}
+.hero p{color:#c3cde4;max-width:560px;margin:0}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 30px}
+.stat,.panel,.feature{border:1px solid var(--line);border-radius:16px;background:linear-gradient(150deg,#0c1429cc,#070b16cc);padding:16px;transition:.2s}
+.stat:hover,.feature:hover{border-color:#3a6fe0;transform:translateY(-3px)}.stat b{display:block}.stat small,.muted{color:var(--muted);font-size:.84rem}
+.marquee{overflow:hidden;border:1px solid #16275a;border-radius:14px;background:#070c1acc;margin-bottom:28px}
+.mq{display:flex;gap:42px;width:max-content;padding:11px 0;animation:mq 28s linear infinite;color:#8fb1ff;font-family:Orbitron;font-size:.8rem;direction:ltr}
+@keyframes mq{to{transform:translateX(-50%)}}
+.section{padding:14px 0 34px}.sectitle{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:16px}
+.sectitle h2{margin:0;font-size:1.8rem;font-weight:900}.sectitle h2:after{content:"";display:block;width:54px;height:4px;border-radius:4px;margin-top:5px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.sectitle p{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+.toolbar{display:grid;grid-template-columns:1fr auto auto;gap:10px;margin:14px 0}
+.toolbar input,.toolbar select,.field input:not([type=checkbox]),.field textarea,.field select{width:100%;background:#070c1a;border:1px solid #1d3066;border-radius:12px;color:#fff;padding:12px;outline:none;transition:.2s}
+.toolbar input:focus,.toolbar select:focus,.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px #2f7bff33}
+select option{background:#0a1226;color:#fff}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}
+.filter{border:1px solid #1d3066;background:#0a1124;color:#c9d5f1;padding:8px 14px;border-radius:999px;font-weight:700;transition:.2s}
+.filter .cnt{opacity:.7;font-size:.75rem;margin-inline-start:4px}
+.filter.active,.filter:hover{background:linear-gradient(135deg,#2f7bff,#0b46d8);color:#fff;border-color:transparent}
+.catalog-info{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.84rem;margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.product{background:linear-gradient(150deg,#0e1730,#070a14);border:1px solid #1b3066;border-radius:20px;overflow:hidden;transition:.25s;min-width:0;animation:rise .5s both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+.product:hover{transform:translateY(-5px);border-color:#3b73ff;box-shadow:0 18px 44px #0a2a8a44}
+.product-image{height:200px;background:radial-gradient(circle at 50% 30%,#17357a,#070a14 72%);position:relative;display:grid;place-items:center;overflow:hidden;cursor:pointer}
+.product-image img{width:100%;height:100%;object-fit:cover;transition:.4s}.product:hover .product-image img{transform:scale(1.06)}
+.emo{font-size:3.8rem}
+.badge{position:absolute;top:10px;right:10px;background:#081230ee;border:1px solid #2c58b8;border-radius:9px;padding:3px 9px;color:#b2cdff;font-size:.72rem;font-weight:700}
+.heart{position:absolute;top:10px;left:10px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;padding:0;background:#070d20cc;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid #ffffff2a;transition:.2s}
+.heart svg{width:21px;height:21px;fill:none;stroke:#fff;stroke-width:2;stroke-linejoin:round;transition:.25s}
+.heart:hover{transform:scale(1.1);border-color:#ff6d9c}.heart:hover svg{stroke:#ff9fbd}
+.heart.saved{background:linear-gradient(135deg,#ff4d8d,#ff7a59);border-color:transparent;box-shadow:0 0 20px #ff4d8d88}
+.heart.saved svg{fill:#fff;stroke:#fff}
+.heart.pop svg{animation:pop .5s}@keyframes pop{0%{transform:scale(.3)}60%{transform:scale(1.4)}100%{transform:scale(1)}}
+.product-body{padding:15px}.product-body h3{margin:0 0 4px;font-size:1.05rem;font-weight:800}
+.product-body p{color:#aab8d6;font-size:.85rem;margin:0;min-height:46px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}.tag{font-size:.7rem;padding:3px 8px;border-radius:8px;background:#102044;color:#a9c6ff}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:13px 0}
+.price{font-weight:900;font-size:1.2rem;color:var(--gold)}.status{font-size:.74rem;color:#8fb1ff}
+.product-actions{display:flex;gap:8px}.product-actions .btn{flex:1;padding:9px 6px;font-size:.84rem}
+.product label.muted{display:flex;gap:6px;align-items:center;margin-top:10px;cursor:pointer}
+.adminonly{display:none!important}body.is-admin .adminonly{display:inline-flex!important}
+.empty{grid-column:1/-1;padding:34px;border:1px dashed #2b4482;border-radius:16px;text-align:center;color:var(--muted)}
+.skel{height:350px;border-radius:20px;border:1px solid #16275a;background:linear-gradient(100deg,#0a1124 30%,#13204a 50%,#0a1124 70%);background-size:200% 100%;animation:sh 1.3s infinite}@keyframes sh{to{background-position:-200% 0}}
+.two-col,.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.row2{gap:12px}.panel h2{margin:0 0 5px}.panel>p{color:var(--muted);font-size:.9rem}
+.field{margin:12px 0}.field label{display:block;font-size:.86rem;margin-bottom:5px}.field textarea{min-height:90px;resize:vertical}.fine{color:#8a9bbf;font-size:.78rem}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.feature h3{margin:4px 0;font-size:1.05rem}.feature p{margin:0;color:var(--muted);font-size:.86rem}
+.faq details{border:1px solid var(--line);background:#080e1f;border-radius:13px;padding:13px 15px;margin:9px 0}.faq summary{cursor:pointer;font-weight:800}.faq details p{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+.notice{margin:12px 0 28px;border:1px solid #25408a;background:#0a1226;border-radius:14px;padding:14px;color:#bac8e6;font-size:.85rem}.notice strong{color:#86adff}
+footer{border-top:1px solid #172a5e;padding:34px 0 26px;color:#8a9bbf;font-size:.86rem;background:linear-gradient(#04060c,#050a18)}
+.footer{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}.footer .logo{font-size:1.5rem}
+.linkbtn{background:none;border:0;color:#6f86bd;text-decoration:underline;padding:0}
+.wa-float{position:fixed;left:18px;bottom:18px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#05210f;font-size:1.5rem;z-index:60;box-shadow:0 0 0 0 #22d66f88;animation:ring 2s infinite}
+@keyframes ring{70%{box-shadow:0 0 0 16px #22d66f00}}
+.toast{position:fixed;bottom:90px;left:18px;right:18px;margin:auto;width:max-content;max-width:90vw;background:#101d3b;border:1px solid #2f54a0;padding:11px 16px;border-radius:12px;z-index:200;display:none;box-shadow:0 10px 30px #000a}
+.toast.err{border-color:#7a2336;background:#2a0f19}
+.backdrop{position:fixed;inset:0;background:#000b;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);z-index:100;display:none;align-items:center;justify-content:center;padding:15px}
+.modal{width:min(660px,100%);max-height:92vh;overflow:auto;border:1px solid #2d50a0;background:#080e1c;border-radius:20px;padding:18px}.modal.wide{width:min(980px,100%)}
+.modalhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.modal h2{margin:0}
+.close{background:#101b33;color:#fff;border:1px solid #32497f;border-radius:9px;padding:7px 10px}
+.modalimg{height:200px;display:grid;place-items:center;background:#102044;border-radius:14px;margin:13px 0;font-size:4rem;overflow:hidden}.modalimg img{width:100%;height:100%;object-fit:cover}
+.admin-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0 12px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;border-bottom:1px solid #16275a;padding-bottom:12px}
+.tab{background:#0a1124;border:1px solid #1d3066;color:#c9d5f1;padding:8px 14px;border-radius:10px;font-weight:700}.tab.active{background:linear-gradient(135deg,#2f7bff,#0b46d8);color:#fff;border-color:transparent}
+.arow{display:grid;grid-template-columns:60px 1fr auto auto;gap:12px;align-items:center;border:1px solid #16275a;background:#0a1124;border-radius:14px;padding:10px;margin:8px 0}
+.athumb{width:60px;height:60px;border-radius:10px;overflow:hidden;background:#102044;display:grid;place-items:center;font-size:1.6rem}.athumb img{width:100%;height:100%;object-fit:cover}
+.arow h4{margin:0;font-size:.98rem}.arow select{background:#070c1a;color:#fff;border:1px solid #1d3066;border-radius:9px;padding:6px}.arow .acts{display:flex;gap:6px}
+.prev{height:150px;border:1px dashed #2b4482;border-radius:12px;display:grid;place-items:center;color:var(--muted);overflow:hidden;margin-top:8px}.prev img{width:100%;height:100%;object-fit:cover}
+.image-pick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:12px}.image-pick-item{position:relative;aspect-ratio:1;border:1px solid #294783;border-radius:12px;overflow:hidden;background:#081127}.image-pick-item img{width:100%;height:100%;object-fit:cover}.image-pick-item button{position:absolute;top:5px;left:5px;width:29px;height:29px;border:1px solid #ff5d73;background:#2a0f19ee;color:#fff;border-radius:50%;font-weight:900}.detail-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}.detail-gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid #294783;background:#081127}.pick-help{font-size:.8rem;color:var(--muted);margin:6px 0 0}
+.err-text{color:#ff9aa8;font-size:.85rem;min-height:1.2em;margin:6px 0}
+.ico{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.iconbtn{padding:9px 11px}
+[data-phone]{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.soc{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font-weight:800;font-size:.9rem;border:1px solid #2d4580;background:#0a1226cc;transition:.2s;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.soc:hover{transform:translateY(-2px)}
+.soc.wa{border-color:#1f7a45;color:#8bf0b4}.soc.wa:hover{background:#0f3a24}
+.soc.ig{border-color:#7a2a63;color:#ffb3d9}.soc.ig:hover{background:#3a1030}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ccard{display:block;text-align:center;border:1px solid var(--line);border-radius:22px;padding:26px 18px;background:linear-gradient(150deg,#0e1730cc,#070a14cc);transition:.25s;position:relative;overflow:hidden}
+.ccard:hover{transform:translateY(-5px);border-color:#3b73ff;box-shadow:0 18px 44px #0a2a8a44}
+.cicon{width:62px;height:62px;border-radius:20px;display:grid;place-items:center;margin:0 auto 12px;color:#fff;box-shadow:0 10px 28px #0006}
+.cicon .ico{width:28px;height:28px}
+.ccard.wa .cicon{background:linear-gradient(135deg,#22d66f,#0f9d58)}
+.ccard.ig .cicon{background:linear-gradient(45deg,#f9a825,#e1306c 55%,#7b2ff7)}
+.ccard.call .cicon{background:linear-gradient(135deg,#2f7bff,#0b46d8)}
+.ccard h3{margin:0 0 2px;font-size:1.1rem}.ccard .val{font-weight:800;color:#dfe8ff;font-size:1.05rem}.ccard small{display:block;color:var(--muted);margin-top:4px}
+.ccard .go{display:inline-block;margin-top:14px;padding:8px 18px;border-radius:999px;background:#12214a;color:#cfe0ff;font-weight:800;font-size:.85rem}
+.float-stack{position:fixed;left:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:60}
+.fl{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 8px 24px #0008;transition:.2s}
+.fl .ico{width:26px;height:26px}.fl:hover{transform:scale(1.08)}
+.fl.wa{background:var(--green);color:#05210f;animation:ring 2s infinite}
+.fl.ig{background:linear-gradient(45deg,#f9a825,#e1306c 55%,#7b2ff7)}
+.toast{bottom:auto;top:84px}
+body.is-admin .product-actions.adminonly{display:flex!important}
+::selection{background:#2f7bff;color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-thumb{background:#1d3066;border-radius:10px}::-webkit-scrollbar-track{background:#05070d}
+@media(max-width:850px){.contact-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.navright .iconbtn{display:none}}
+@media(max-width:850px){nav{display:none}.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.toolbar{grid-template-columns:1fr 1fr}.toolbar .search{grid-column:1/-1}.feature-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.brand small{display:none}.brand .logo{font-size:1.05rem}.hero{padding:26px 18px}.grid{grid-template-columns:1fr}.sectitle{flex-direction:column;align-items:start}.toolbar{grid-template-columns:1fr}.filters{overflow-x:auto;flex-wrap:nowrap;padding-bottom:6px}.filter{white-space:nowrap}.two-col,.feature-grid,.row2{grid-template-columns:1fr}.catalog-info{flex-direction:column}.actions .btn{flex:1}.arow{grid-template-columns:56px 1fr}.arow select,.arow .acts{grid-column:1/-1}.navright .btn.primary{display:none}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.3-4.3A8.5 8.5 0 1 1 20.5 11.8z"/><path d="M9 8.6c.3 2.9 2.5 5.2 5.6 6.1l1.2-1.5-2-1-.9.8c-.8-.4-1.5-1.1-1.9-1.9l.8-.9-1-2z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+</defs></svg>
+<div class="announce" id="announce" hidden></div>
+<header><div class="container nav">
+<a class="brand" href="#top"><span class="mark">S</span><span><span class="logo"><b>SIDOU_</b>SHOP16</span><small>GAMING ACCOUNTS</small></span></a>
+<nav><a href="#offers">العروض</a><a href="#sell">اعرض حسابك</a><a href="#features">المميزات</a><a href="#contact">تواصل</a><a href="#faq">الأسئلة</a></nav>
+<div class="navright"><a class="btn outline iconbtn" data-ig target="_blank" rel="noopener" aria-label="انستغرام"><svg class="ico"><use href="#i-ig"/></svg></a><button class="btn outline" data-action="fav-jump" aria-label="المفضلة"><svg class="heartico" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><span id="favCount">0</span></button><button class="btn outline" id="adminBtn" data-action="open-admin" title="دخول المدير">🔐</button><a class="btn primary" href="#offers">تصفح المتجر</a></div>
+</div></header>
+<main class="container" id="top">
+<section class="hero"><div class="hero-in">
+<span class="eyebrow"><i class="dot"></i> متجر مفتوح الآن · الجزائر</span>
+<h1 class="hero-name logo"><b>SIDOU_</b>SHOP16</h1>
+<div class="hero-sub" id="heroSub"></div>
+<p id="heroText"></p>
+<div class="actions"><a class="btn primary" href="#offers">⚡ استكشف العروض</a><a class="btn outline" href="#sell">＋ اعرض حسابك للبيع</a></div>
+<div class="socials"><a class="soc wa" data-wa target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg><span data-phone></span></a><a class="soc ig" data-ig target="_blank" rel="noopener"><svg class="ico"><use href="#i-ig"/></svg><span>@sidou_shop16_</span></a></div>
+</div></section>
+<div class="marquee"><div class="mq" id="mq"></div></div>
+<div class="stats"><div class="stat"><b>🔎 بحث سريع</b><small>ابحث باللعبة والمواصفات</small></div><div class="stat"><b>♥ مفضلة</b><small>احفظ العروض على جهازك</small></div><div class="stat"><b>⇄ مقارنة</b><small>قارن حتى 3 حسابات</small></div><div class="stat"><b>✓ بدون تسجيل</b><small>ادخل وتصفح مباشرة</small></div></div>
+
+<section class="section" id="offers"><div class="sectitle"><div><h2>أحدث العروض</h2><p>ابحث، صفِّ النتائج، ورتبها حسب السعر.</p></div><span id="countLabel" class="muted">0 عرض</span></div>
+<div class="toolbar"><div class="search"><input id="searchInput" type="search" placeholder="ابحث عن لعبة أو رتبة أو مواصفات..."></div>
+<select id="sortSelect"><option value="featured">الأحدث أولًا</option><option value="low">السعر من الأقل</option><option value="high">السعر من الأعلى</option><option value="name">الاسم أبجديًا</option></select>
+<select id="priceFilter"><option value="all">كل الأسعار</option><option value="under5000">أقل من 5,000 دج</option><option value="mid">5,000–15,000 دج</option><option value="high">أكثر من 15,000 دج</option><option value="ask">السعر عند الطلب</option></select></div>
+<div class="filters" id="filters"></div>
+<div class="catalog-info"><span id="catalogStatus" role="status">جارٍ الاتصال بقاعدة البيانات...</span><span id="compareHint">0 من 3 للمقارنة</span></div>
+<div class="grid" id="catalog"></div>
+<div class="actions"><button class="btn mutedbtn" data-action="compare-open">⇄ مقارنة الحسابات المختارة</button><button class="btn outline" data-action="reload">↻ تحديث العروض</button><button class="btn outline" data-action="reset">إعادة ضبط البحث</button><button class="btn primary adminonly" data-action="admin-new">＋ إضافة منتج</button></div></section>
+
+<section class="section" id="features"><div class="sectitle"><div><h2>مميزات المتجر</h2><p>خيارات تسهّل التصفح من الهاتف والحاسوب.</p></div></div>
+<div class="feature-grid"><div class="feature"><h3>🔍 بحث وتصفية</h3><p>ابحث بالكلمات واختر اللعبة والسعر.</p></div><div class="feature"><h3>♥ المفضلة</h3><p>تُحفظ محليًا في نفس المتصفح.</p></div><div class="feature"><h3>⇄ مقارنة</h3><p>قارن تفاصيل حتى ثلاثة عروض.</p></div><div class="feature"><h3>💬 واتساب</h3><p>رسالة استفسار جاهزة باسم العرض.</p></div><div class="feature"><h3>🛡️ أمان</h3><p>لا تشارك كلمات المرور أو رموز التحقق.</p></div><div class="feature"><h3>📱 متجاوب</h3><p>واجهة مناسبة لكل الشاشات.</p></div></div></section>
+
+<section class="section" id="sell"><div class="sectitle"><div><h2>هل تريد بيع حسابك؟</h2><p>أرسل تفاصيل أولية إلى المتجر عبر واتساب.</p></div></div>
+<div class="two-col"><div class="panel"><h2>طلب عرض حساب للبيع</h2><p>سيتم تجهيز رسالة واتساب، ولن يُنشر الحساب تلقائيًا.</p>
+<form id="sellForm"><div class="field"><label for="sellerName">اسمك أو لقبك</label><input id="sellerName" required maxlength="60" placeholder="اسم البائع"></div>
+<div class="field"><label for="sellerContact">رقم تواصل اختياري</label><input id="sellerContact" maxlength="25" placeholder="رقم واتساب إن رغبت"></div>
+<div class="field"><label for="accountType">اللعبة</label><select id="accountType" required></select></div>
+<div class="field"><label for="productName">عنوان العرض</label><input id="productName" required maxlength="100" placeholder="مثال: حساب مع لاعبين مميزين"></div>
+<div class="field"><label for="price">السعر المقترح (دج)</label><input id="price" type="number" min="0" required placeholder="5000"></div>
+<div class="field"><label for="details">تفاصيل الحساب</label><textarea id="details" maxlength="1000" placeholder="المستوى، الرتبة، العناصر..."></textarea></div>
+<div class="field"><label for="imageStatus">الصور</label><select id="imageStatus"><option>سأرسل الصور لاحقًا عبر واتساب</option><option>لا توجد صور حاليًا</option></select></div>
+<div class="field"><label><input id="safeCheck" type="checkbox" required> لن أرسل كلمات مرور أو رموز تحقق.</label></div>
+<button class="btn green" type="submit">إرسال الطلب إلى واتساب ↗</button><p class="fine">أرسل الصور يدويًا بعد فتح المحادثة.</p></form></div>
+<div class="panel"><h2>كيف تتم العملية؟</h2><p>خطوات واضحة قبل اعتماد أي عرض.</p>
+<div class="feature"><h3>01 · أرسل التفاصيل</h3><p>اكتب اللعبة والسعر والمميزات بدقة.</p></div><br>
+<div class="feature"><h3>02 · مراجعة العرض</h3><p>قد نطلب صورًا إضافية لتوضيح المواصفات.</p></div><br>
+<div class="feature"><h3>03 · التواصل والاتفاق</h3><p>ناقش السعر وطريقة النقل عبر واتساب.</p></div></div></div></section>
+
+<section class="section" id="contact"><div class="sectitle"><div><h2>تواصل معي</h2><p>أرد عليك في أقرب وقت. اختر الطريقة الأنسب لك.</p></div></div>
+<div class="contact-grid">
+<a class="ccard wa" data-wa target="_blank" rel="noopener"><div class="cicon"><svg class="ico"><use href="#i-wa"/></svg></div><h3>واتساب</h3><div class="val" data-phone></div><small>الأسرع للاستفسار والاتفاق</small><span class="go">ابدأ المحادثة ↗</span></a>
+<a class="ccard ig" data-ig target="_blank" rel="noopener"><div class="cicon"><svg class="ico"><use href="#i-ig"/></svg></div><h3>انستغرام</h3><div class="val" dir="ltr">@sidou_shop16_</div><small>تابع أحدث العروض والحسابات</small><span class="go">زيارة الصفحة ↗</span></a>
+<a class="ccard call" data-tel><div class="cicon"><svg class="ico"><use href="#i-phone"/></svg></div><h3>اتصال مباشر</h3><div class="val" data-phone></div><small>للحالات المستعجلة</small><span class="go">اتصل الآن</span></a>
+</div></section>
+
+<section class="section faq" id="faq"><div class="sectitle"><div><h2>الأسئلة الشائعة</h2><p>معلومات مهمة قبل الشراء أو البيع.</p></div></div>
+<details><summary>هل أحتاج إلى إنشاء حساب للدخول؟</summary><p>لا. المتجر مفتوح مباشرة لكل الزوار بدون تسجيل دخول.</p></details>
+<details><summary>هل أدفع من داخل الموقع؟</summary><p>لا. الموقع لا يعالج المدفوعات؛ تواصل عبر واتساب واتفق على التفاصيل.</p></details>
+<details><summary>هل طلب البيع ينشر الحساب مباشرة؟</summary><p>لا، يجهز رسالة واتساب فقط؛ النشر يحتاج مراجعة وإضافة العرض من إدارة المتجر.</p></details>
+<details><summary>هل المفضلة تظهر للزوار الآخرين؟</summary><p>لا، تحفظ محليًا في متصفحك فقط.</p></details></section>
+<div class="notice"><strong>تنبيه:</strong> المفضلة والمقارنة محليتان على جهازك. لا تشارك كلمات المرور أو رموز التحقق مع أي شخص.</div>
+</main>
+<footer><div class="container footer"><span><span class="logo"><b>SIDOU_</b>SHOP16</span><br>سوق حسابات الألعاب · الجزائر</span><span>© <span id="year"></span> SIDOU_SHOP16 · <button class="linkbtn" data-action="open-admin">دخول المدير</button></span><span class="socials" style="margin:0"><a class="soc wa" data-wa target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>واتساب</a><a class="soc ig" data-ig target="_blank" rel="noopener"><svg class="ico"><use href="#i-ig"/></svg>انستغرام</a></span></div></footer>
+<div class="float-stack"><a class="fl ig" data-ig target="_blank" rel="noopener" aria-label="انستغرام"><svg class="ico"><use href="#i-ig"/></svg></a><a class="fl wa" data-wa target="_blank" rel="noopener" aria-label="واتساب"><svg class="ico"><use href="#i-wa"/></svg></a></div><div class="toast" id="toast" role="status"></div>
+<div class="backdrop" id="backdrop"><div class="modal" id="modal"><div class="modalhead"><h2 id="modalTitle"></h2><button class="close" data-action="close-modal" aria-label="إغلاق">✕</button></div><div id="modalContent"></div></div></div>
+
+<script>
+(() => {
+'use strict';
+
+/* ============ 1) الإعدادات ============ */
+const CONFIG = {
+  URL: 'https://pmhdhdxvchpatloviorc.supabase.co',
+  KEY: 'sb_publishable_eb0YntIed660NFrpdQp7KA_pIg2wHXO',
+  BUCKET: 'product-images',
+  MAX_COMPARE: 3,
+  INSTAGRAM: 'https://www.instagram.com/sidou_shop16_/'
+};
+const DEFAULT_SETTINGS = {
+  phone: '213781797286',
+  announcement: '',
+  hero_sub: 'سوق حسابات الألعاب الأول في جيبك',
+  hero_text: 'تصفّح الحسابات مباشرة بدون تسجيل، قارن المواصفات والأسعار، احفظ مفضلتك، وتواصل مع SIDOU_SHOP16 عبر واتساب.'
+};
+const GAMES = {
+  efootball: { label: 'eFootball / PES', short: 'eFootball', emoji: '⚽', tags: ['eFootball', 'PES'] },
+  freefire:  { label: 'Free Fire',       short: 'Free Fire', emoji: '🔥', tags: ['Free Fire', 'حساب ألعاب'] },
+  pubg:      { label: 'PUBG Mobile',     short: 'PUBG',      emoji: '🎯', tags: ['PUBG Mobile', 'حساب ألعاب'] },
+  other:     { label: 'أخرى',            short: 'أخرى',      emoji: '🎮', tags: ['ألعاب', 'حساب ألعاب'] }
+};
+const STATUS = { available: 'متاح', sold: 'مباع', hidden: 'مخفي' };
+const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
+
+/* ============ 2) الحالة والأدوات ============ */
+const state = {
+  products: [], settings: { ...DEFAULT_SETTINGS },
+  filter: 'all', comp: new Set(), favs: new Set(),
+  session: null, isAdmin: false, adminTab: 'products', editing: null,
+  modal: null, loaded: false, loadError: false, formImages: []
+};
+const $ = id => document.getElementById(id);
+const mem = {};
+const storage = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return mem[k] ?? null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch (e) { mem[k] = v; } },
+  del(k) { try { localStorage.removeItem(k); } catch (e) { delete mem[k]; } }
+};
+const esc = x => String(x ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const money = x => Number(x) > 0 ? Number(x).toLocaleString('fr-DZ') + ' دج' : 'السعر عند الطلب';
+let toastTimer;
+function toast(msg, isErr) {
+  const t = $('toast'); t.textContent = msg; t.classList.toggle('err', !!isErr); t.style.display = 'block';
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.style.display = 'none'; }, 3000);
+}
+function gameKey(raw) {
+  const g = String(raw || '').toLowerCase().replace(/[\s_-]/g, '');
+  if (g.includes('freefire')) return 'freefire';
+  if (g.includes('pubg')) return 'pubg';
+  if (g.includes('efootball') || g === 'pes') return 'efootball';
+  return 'other';
+}
+function parseImageUrls(raw) {
+  if (Array.isArray(raw)) return raw.map(x => String(x || '').trim()).filter(Boolean);
+  const value = String(raw || '').trim();
+  if (!value) return [];
+  if (value.startsWith('[')) {
+    try { const parsed = JSON.parse(value); if (Array.isArray(parsed)) return parsed.map(x => String(x || '').trim()).filter(Boolean); } catch (e) {}
+  }
+  return [value];
+}
+function storedImageValue(urls) {
+  const clean = [...new Set((urls || []).map(x => String(x || '').trim()).filter(Boolean))];
+  return clean.length > 1 ? JSON.stringify(clean) : (clean[0] || null);
+}
+function normProduct(r) {
+  const game = gameKey(r.game), images = parseImageUrls(r.image_url);
+  return {
+    id: String(r.id), title: r.title || 'عرض', game, price: Number(r.price) || 0,
+    description: r.description || '', image_url: images[0] || '', images,
+    status: STATUS[r.status] ? r.status : 'available'
+  };
+}
+const waUrl = text => 'https://wa.me/' + state.settings.phone + (text ? '?text=' + encodeURIComponent(text) : '');
+const productLink = p => waUrl('السلام عليكم SIDOU_SHOP16، أريد الاستفسار عن العرض: ' + p.title + ' (' + GAMES[p.game].label + '). هل هو متاح؟');
+const visible = () => state.products.filter(p => p.status === 'available');
+const findProduct = id => state.products.find(p => p.id === String(id));
+function readError(e) {
+  const m = String((e && e.message) || e || '');
+  if (/invalid login/i.test(m)) return 'البريد أو كلمة المرور غير صحيحة.';
+  if (/email not confirmed/i.test(m)) return 'البريد غير مؤكد في Supabase.';
+  if (/relation|schema cache|admins|does not exist/i.test(m)) return 'نفّذ ملف SQL الخاص بالمدير أولًا في Supabase.';
+  if (/row-level security|violates|permission|403/i.test(m)) return 'ليست لديك صلاحية مدير لتنفيذ هذا الإجراء.';
+  if (/failed to fetch|network/i.test(m)) return 'تعذر الاتصال بالشبكة.';
+  return m || 'حدث خطأ غير متوقع.';
+}
+
+/* ============ 3) طبقة الاتصال ============ */
+async function api(path, opt = {}, canRetry = true) {
+  const headers = { apikey: CONFIG.KEY, ...(opt.headers || {}) };
+  const hasJson = opt.json !== undefined;
+  if (hasJson) headers['Content-Type'] = 'application/json';
+  const useAuth = opt.auth !== false && state.session;
+  if (useAuth) headers.Authorization = 'Bearer ' + state.session.access_token;
+  const res = await fetch(CONFIG.URL + path, {
+    method: opt.method || 'GET', headers,
+    body: hasJson ? JSON.stringify(opt.json) : opt.body
+  });
+  if (res.status === 401 && useAuth && canRetry && await refreshSession()) return api(path, opt, false);
+  if (!res.ok) {
+    let msg = 'HTTP ' + res.status;
+    try { const j = await res.json(); msg = j.message || j.msg || j.error_description || j.error || msg; } catch (e) {}
+    const err = new Error(msg); err.status = res.status; throw err;
+  }
+  if (res.status === 204) return null;
+  const text = await res.text();
+  if (!text) return null;
+  try { return JSON.parse(text); } catch (e) { return text; }
+}
+
+/* ============ 4) الجلسة والمدير ============ */
+function saveSession(d) {
+  state.session = {
+    access_token: d.access_token, refresh_token: d.refresh_token, user_id: (d.user && d.user.id) || (state.session && state.session.user_id) || '',
+    expires_at: Date.now() + (Number(d.expires_in) || 3600) * 1000,
+    email: (d.user && d.user.email) || (state.session && state.session.email) || ''
+  };
+  storage.set('sidou_session', JSON.stringify(state.session));
+}
+function clearSession() { state.session = null; state.isAdmin = false; storage.del('sidou_session'); }
+async function refreshSession() {
+  if (!state.session || !state.session.refresh_token) return false;
+  try {
+    const d = await api('/auth/v1/token?grant_type=refresh_token', { method: 'POST', json: { refresh_token: state.session.refresh_token }, auth: false }, false);
+    saveSession(d); return true;
+  } catch (e) { clearSession(); updateAdminUI(); return false; }
+}
+async function verifyAdmin() {
+  try { if (!state.session) { state.isAdmin = false; return false; } if (!state.session.user_id) { const user = await api('/auth/v1/user'); state.session.user_id = user && user.id || ''; storage.set('sidou_session', JSON.stringify(state.session)); } if (!state.session.user_id) { state.isAdmin = false; return false; } const rows = await api('/rest/v1/admins?select=user_id&user_id=eq.' + encodeURIComponent(state.session.user_id)); state.isAdmin = Array.isArray(rows) && rows.some(r => String(r.user_id) === String(state.session.user_id)); }
+  catch (e) { state.isAdmin = false; state.adminCheckError = e; }
+  return state.isAdmin;
+}
+async function login(email, password) {
+  const d = await api('/auth/v1/token?grant_type=password', { method: 'POST', json: { email, password }, auth: false });
+  saveSession(d);
+  if (!await verifyAdmin()) {
+    const why = state.adminCheckError;
+    await logout(true);
+    throw new Error(why ? readError(why) : 'هذا الحساب ليس مديرًا. أضِفه إلى جدول admins.');
+  }
+}
+async function logout(silent) {
+  try { if (state.session) await api('/auth/v1/logout', { method: 'POST' }, false); } catch (e) {}
+  clearSession(); updateAdminUI();
+  if (!silent) { closeModal(); await loadProducts(); toast('تم تسجيل الخروج'); }
+}
+async function restoreSession() {
+  try {
+    const raw = storage.get('sidou_session'); if (!raw) return;
+    state.session = JSON.parse(raw);
+    if (!state.session || !state.session.access_token) { clearSession(); return; }
+    if (state.session.expires_at - Date.now() < 30000 && !await refreshSession()) return;
+    if (!await verifyAdmin()) clearSession();
+  } catch (e) { clearSession(); }
+}
+function updateAdminUI() {
+  document.body.classList.toggle('is-admin', state.isAdmin);
+  $('adminBtn').textContent = state.isAdmin ? '⚙ المدير' : '🔐';
+}
+
+/* ============ 5) البيانات ============ */
+async function loadProducts() {
+  state.loadError = false; renderCatalog(true);
+  const sel = '/rest/v1/products?select=id,title,game,price,description,image_url,status,created_at&order=created_at.desc';
+  try {
+    const rows = await api(sel + (state.isAdmin ? '' : '&status=eq.available'));
+    state.products = (Array.isArray(rows) ? rows : []).map(normProduct);
+    state.loaded = true;
+  } catch (e) { console.error('products:', e); state.products = []; state.loadError = true; }
+  render();
+}
+async function loadSettings() {
+  try {
+    const rows = await api('/rest/v1/site_settings?select=key,value');
+    const next = { ...DEFAULT_SETTINGS };
+    (Array.isArray(rows) ? rows : []).forEach(r => { if (r.key in next && r.value != null && String(r.value).trim() !== '') next[r.key] = String(r.value); });
+    state.settings = next;
+  } catch (e) { state.settings = { ...DEFAULT_SETTINGS }; }
+  applySettings();
+}
+function applySettings() {
+  const s = state.settings;
+  $('heroSub').textContent = s.hero_sub; $('heroText').textContent = s.hero_text;
+  const a = $('announce'); a.textContent = s.announcement; a.hidden = !s.announcement.trim();
+  const p = s.phone, shown = /^\d{12}$/.test(p) ? p.replace(/^(\d{3})(\d{3})(\d{3})(\d{3})$/, '+$1 $2 $3 $4') : '+' + p;
+  document.querySelectorAll('[data-wa]').forEach(el => { el.href = waUrl(''); });
+  document.querySelectorAll('[data-ig]').forEach(el => { el.href = CONFIG.INSTAGRAM; });
+  document.querySelectorAll('[data-tel]').forEach(el => { el.href = 'tel:+' + p; });
+  document.querySelectorAll('[data-phone]').forEach(el => { el.textContent = shown; });
+}
+
+/* ============ 6) واجهة المتجر ============ */
+function renderFilters() {
+  const list = visible();
+  const count = k => k === 'all' ? list.length : k === 'favorites' ? list.filter(p => state.favs.has(p.id)).length : list.filter(p => p.game === k).length;
+  const items = [['all', 'الكل'], ['efootball', '⚽ eFootball'], ['freefire', '🔥 Free Fire'], ['pubg', '🎯 PUBG'], ['other', '🎮 أخرى'], ['favorites', '♥ المفضلة']];
+  $('filters').innerHTML = items.map(([k, l]) => `<button class="filter ${state.filter === k ? 'active' : ''}" data-action="filter" data-id="${k}">${l}<span class="cnt">${count(k)}</span></button>`).join('');
+}
+function filteredList() {
+  const q = $('searchInput').value.trim().toLowerCase(), pf = $('priceFilter').value, sort = $('sortSelect').value;
+  const list = visible().filter(p => {
+    const text = (p.title + ' ' + p.description + ' ' + GAMES[p.game].label + ' ' + GAMES[p.game].tags.join(' ')).toLowerCase();
+    let ok = (state.filter === 'all' || p.game === state.filter || (state.filter === 'favorites' && state.favs.has(p.id))) && text.includes(q);
+    if (pf === 'under5000') ok = ok && p.price > 0 && p.price < 5000;
+    if (pf === 'mid') ok = ok && p.price >= 5000 && p.price <= 15000;
+    if (pf === 'high') ok = ok && p.price > 15000;
+    if (pf === 'ask') ok = ok && p.price === 0;
+    return ok;
+  });
+  if (sort === 'low') list.sort((a, b) => (a.price || Infinity) - (b.price || Infinity));
+  if (sort === 'high') list.sort((a, b) => b.price - a.price);
+  if (sort === 'name') list.sort((a, b) => a.title.localeCompare(b.title, 'ar'));
+  return list;
+}
+function productCard(p, i) {
+  const g = GAMES[p.game], fav = state.favs.has(p.id);
+  return `<article class="product" style="animation-delay:${Math.min(i, 8) * 60}ms">
+<div class="product-image" data-action="details" data-id="${esc(p.id)}">${p.image_url ? `<img src="${esc(p.image_url)}" alt="${esc(p.title)}" loading="lazy" data-fb="${g.emoji}">` : `<span class="emo">${g.emoji}</span>`}
+<span class="badge">${esc(g.label)}</span>
+<button class="heart ${fav ? 'saved' : ''}" data-action="fav" data-id="${esc(p.id)}" aria-label="إضافة إلى المفضلة" aria-pressed="${fav}">${HEART}</button></div>
+<div class="product-body"><h3>${esc(p.title)}</h3><p>${esc(p.description || 'لا توجد تفاصيل إضافية حاليًا.')}</p>
+<div class="tags">${g.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+<div class="meta"><span class="price">${money(p.price)}</span><span class="status">● للاستفسار</span></div>
+<div class="product-actions"><button class="btn outline" data-action="details" data-id="${esc(p.id)}">التفاصيل</button><a class="btn primary" href="${productLink(p)}" target="_blank" rel="noopener">واتساب</a></div>
+<div class="product-actions adminonly" style="margin-top:8px"><button class="btn mutedbtn sm" data-action="admin-edit" data-id="${esc(p.id)}">✎ تعديل</button></div>
+<label class="muted"><input type="checkbox" data-action="compare" data-id="${esc(p.id)}" ${state.comp.has(p.id) ? 'checked' : ''}> أضف للمقارنة</label></div></article>`;
+}
+function renderCatalog(loading) {
+  if (loading) { $('catalog').innerHTML = '<div class="skel"></div><div class="skel"></div><div class="skel"></div>'; return; }
+  const list = filteredList();
+  $('catalog').innerHTML = list.length ? list.map(productCard).join('') : '<div class="empty">لا توجد نتائج. جرّب تغيير البحث أو الفلاتر.</div>';
+  $('countLabel').textContent = list.length + ' عروض';
+}
+function render() {
+  renderFilters(); renderCatalog(false);
+  $('favCount').textContent = state.favs.size;
+  $('compareHint').textContent = state.comp.size + ' من ' + CONFIG.MAX_COMPARE + ' للمقارنة';
+  const n = visible().length;
+  $('catalogStatus').textContent = state.loadError ? 'تعذر تحميل المنتجات. تأكد من الاتصال، ثم اضغط «تحديث العروض».' : state.loaded ? (n ? '● متصل بقاعدة البيانات · ' + n + ' منتج' : 'تم الاتصال بقاعدة البيانات، ولا توجد منتجات متاحة حاليًا.') : 'جارٍ الاتصال بقاعدة البيانات...';
+}
+function toggleFav(id) {
+  state.favs.has(id) ? state.favs.delete(id) : state.favs.add(id);
+  storage.set('sidou_favs', JSON.stringify([...state.favs]));
+  $('favCount').textContent = state.favs.size;
+  if (state.filter === 'favorites') { render(); return; }
+  document.querySelectorAll('.heart[data-id="' + CSS.escape(id) + '"]').forEach(b => {
+    const on = state.favs.has(id); b.classList.toggle('saved', on); b.setAttribute('aria-pressed', on);
+    b.classList.remove('pop'); void b.offsetWidth; if (on) b.classList.add('pop');
+  });
+  renderFilters();
+}
+
+/* ============ 7) النوافذ ============ */
+function openModal(title, html, mode, wide) {
+  state.modal = mode; $('modalTitle').textContent = title; $('modalContent').innerHTML = html;
+  $('modal').classList.toggle('wide', !!wide); $('backdrop').style.display = 'flex';
+}
+function closeModal() { $('backdrop').style.display = 'none'; state.modal = null; }
+function showDetails(id) {
+  const p = findProduct(id); if (!p) return; const g = GAMES[p.game];
+  const images = p.images && p.images.length ? p.images : parseImageUrls(p.image_url);
+  openModal(p.title, `${images.length ? `<div class="modalimg"><img src="${esc(images[0])}" alt="${esc(p.title)}" data-fb="${g.emoji}"></div>${images.length > 1 ? `<div class="detail-gallery">${images.map((url, i) => `<img src="${esc(url)}" alt="${esc(p.title)} — صورة ${i + 1}" loading="lazy" data-fb="${g.emoji}">`).join('')}</div>` : ''}` : `<div class="modalimg">${g.emoji}</div>`}
+<p><b>اللعبة:</b> ${esc(g.label)}</p><p><b>السعر:</b> ${money(p.price)}</p><p><b>التفاصيل:</b> ${esc(p.description || 'لا توجد تفاصيل إضافية.')}</p>
+<p class="fine">تحقق من تفاصيل الحساب وشروط النقل قبل الدفع.</p><a class="btn green" href="${productLink(p)}" target="_blank" rel="noopener">اسأل عبر واتساب</a>`, 'details');
+}
+function showCompare() {
+  const a = [...state.comp].map(findProduct).filter(Boolean);
+  if (a.length < 2) { toast('اختر حسابين على الأقل'); return; }
+  const rows = [['اللعبة', p => GAMES[p.game].label], ['السعر', p => money(p.price)], ['الوصف', p => p.description || '—']];
+  openModal('مقارنة الحسابات', `<div style="overflow:auto"><table style="width:100%;text-align:right;border-collapse:collapse"><tr><th style="padding:8px">المعلومة</th>${a.map(p => `<th style="padding:8px">${esc(p.title)}</th>`).join('')}</tr>${rows.map(([n, fn]) => `<tr><td style="padding:8px;border-top:1px solid #1a2d60"><b>${n}</b></td>${a.map(p => `<td style="padding:8px;border-top:1px solid #1a2d60">${esc(fn(p))}</td>`).join('')}</tr>`).join('')}</table></div>`, 'compare');
+}
+
+/* ============ 8) لوحة المدير ============ */
+function openAdmin() {
+  if (!state.isAdmin) {
+    openModal('دخول المدير', `<form id="loginForm" autocomplete="on"><p class="muted">هذه الصفحة للمدير فقط. الزوار يتصفحون المتجر بدون تسجيل.</p>
+<div class="field"><label for="l_email">البريد الإلكتروني</label><input id="l_email" type="email" autocomplete="username" required dir="ltr"></div>
+<div class="field"><label for="l_pass">كلمة المرور</label><input id="l_pass" type="password" autocomplete="current-password" required dir="ltr"></div>
+<div class="err-text" id="loginErr"></div><button class="btn primary" type="submit" style="width:100%">دخول</button></form>`, 'login');
+    setTimeout(() => { const el = $('l_email'); if (el) el.focus(); }, 50);
+    return;
+  }
+  renderAdmin();
+}
+function renderAdmin() {
+  const tabs = [['products', '📦 المنتجات'], ['form', state.editing ? '✎ تعديل منتج' : '＋ منتج جديد'], ['settings', '⚙ إعدادات الموقع']];
+  const body = state.adminTab === 'form' ? formTab() : state.adminTab === 'settings' ? settingsTab() : productsTab();
+  openModal('لوحة المدير', `<div class="admin-top"><span class="muted">مسجّل كـ ${esc(state.session && state.session.email)}</span><button class="btn mutedbtn sm" data-action="admin-logout">تسجيل الخروج</button></div>
+<div class="tabs">${tabs.map(([k, l]) => `<button class="tab ${state.adminTab === k ? 'active' : ''}" data-action="admin-tab" data-id="${k}">${l}</button>`).join('')}</div>${body}`, 'admin', true);
+}
+function productsTab() {
+  const head = `<div class="actions" style="margin:0 0 6px"><button class="btn primary sm" data-action="admin-new">＋ منتج جديد</button><span class="muted" style="align-self:center">${state.products.length} منتج</span></div>`;
+  if (!state.products.length) return head + '<div class="empty">لا توجد منتجات بعد. أضف أول منتج.</div>';
+  return head + state.products.map(p => `<div class="arow"><div class="athumb">${p.image_url ? `<img src="${esc(p.image_url)}" alt="" data-fb="${GAMES[p.game].emoji}">` : GAMES[p.game].emoji}</div>
+<div><h4>${esc(p.title)}</h4><span class="muted">${esc(GAMES[p.game].label)} · ${money(p.price)}</span></div>
+<select data-action="admin-status" data-id="${esc(p.id)}" aria-label="الحالة">${Object.entries(STATUS).map(([k, l]) => `<option value="${k}" ${p.status === k ? 'selected' : ''}>${l}</option>`).join('')}</select>
+<div class="acts"><button class="btn mutedbtn sm" data-action="admin-edit" data-id="${esc(p.id)}">✎ تعديل</button><button class="btn danger sm" data-action="admin-delete" data-id="${esc(p.id)}">🗑 حذف</button></div></div>`).join('');
+}
+function formTab() {
+  const p = state.editing || { title: '', game: 'efootball', price: '', description: '', image_url: '', images: [], status: 'available' };
+  const initialImages = p.images && p.images.length ? p.images : parseImageUrls(p.image_url);
+  if (!state.editing && !state.formImages.length && initialImages.length) state.formImages = [...initialImages];
+  return `<form id="productForm" autocomplete="off">
+<div class="field"><label for="f_title">عنوان العرض</label><input id="f_title" required maxlength="100" value="${esc(p.title)}"></div>
+<div class="row2"><div class="field"><label for="f_game">اللعبة</label><select id="f_game">${Object.entries(GAMES).map(([k, g]) => `<option value="${k}" ${p.game === k ? 'selected' : ''}>${g.label}</option>`).join('')}</select></div>
+<div class="field"><label for="f_status">الحالة</label><select id="f_status">${Object.entries(STATUS).map(([k, l]) => `<option value="${k}" ${p.status === k ? 'selected' : ''}>${l}</option>`).join('')}</select></div></div>
+<div class="field"><label for="f_price">السعر (دج) — اتركه 0 ليظهر «السعر عند الطلب»</label><input id="f_price" type="number" min="0" step="1" value="${p.price === '' ? '' : esc(p.price)}" placeholder="0"></div>
+<div class="field"><label for="f_desc">الوصف</label><textarea id="f_desc" maxlength="1500">${esc(p.description)}</textarea></div>
+<div class="field"><label>صور الحساب</label><input id="imgFile" type="file" accept="image/*" multiple hidden data-action="upload-images"><button class="btn outline" type="button" data-action="pick-images" style="width:100%">＋ إضافة صور من الهاتف</button><p class="pick-help">اختر عدة صور من المعرض. تُرفع الصور إلى المتجر تلقائيًا، ولا تحتاج إلى كتابة أي رابط.</p><div id="imageGallery" class="image-pick-grid">${renderImagePickerHTML()}</div></div>
+<div class="err-text" id="formErr"></div>
+<div class="actions" style="margin-top:0"><button class="btn green" type="submit" id="saveBtn">💾 حفظ</button><button class="btn outline" type="button" data-action="admin-tab" data-id="products">إلغاء</button></div></form>`;
+}
+function renderImagePickerHTML() {
+  if (!state.formImages.length) return '<div class="muted" style="grid-column:1/-1;text-align:center;padding:14px">لم تُضف صور بعد.</div>';
+  return state.formImages.map((url, i) => `<div class="image-pick-item"><img src="${esc(url)}" alt="صورة ${i + 1}"><button type="button" data-action="remove-image" data-id="${i}" aria-label="حذف الصورة">×</button></div>`).join('');
+}
+function refreshImagePicker() { const el = $('imageGallery'); if (el) el.innerHTML = renderImagePickerHTML(); }
+
+function settingsTab() {
+  const s = state.settings;
+  return `<form id="settingsForm" autocomplete="off"><p class="muted">تغييرات تظهر لكل الزوار مباشرة.</p>
+<div class="field"><label for="s_phone">رقم واتساب (بصيغة دولية بدون +)</label><input id="s_phone" dir="ltr" inputmode="numeric" value="${esc(s.phone)}" placeholder="213781797286"></div>
+<div class="field"><label for="s_ann">شريط إعلان أعلى الموقع (اتركه فارغًا لإخفائه)</label><input id="s_ann" maxlength="160" value="${esc(s.announcement)}" placeholder="مثال: خصم 10% هذا الأسبوع"></div>
+<div class="field"><label for="s_sub">العنوان الفرعي</label><input id="s_sub" maxlength="120" value="${esc(s.hero_sub)}"></div>
+<div class="field"><label for="s_text">النص التعريفي</label><textarea id="s_text" maxlength="400">${esc(s.hero_text)}</textarea></div>
+<div class="err-text" id="setErr"></div>
+<div class="actions" style="margin-top:0"><button class="btn green" type="submit">💾 حفظ الإعدادات</button><button class="btn outline" type="button" data-action="settings-reset">استعادة الافتراضي</button></div></form>`;
+}
+async function compressImage(file) {
+  try {
+    const bmp = await createImageBitmap(file), max = 1200, s = Math.min(1, max / Math.max(bmp.width, bmp.height));
+    const c = document.createElement('canvas'); c.width = Math.round(bmp.width * s); c.height = Math.round(bmp.height * s);
+    c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+    const blob = await new Promise(r => c.toBlob(r, 'image/jpeg', 0.85));
+    return blob || file;
+  } catch (e) { return file; }
+}
+async function uploadImage(file) {
+  const blob = await compressImage(file);
+  const ext = blob.type === 'image/jpeg' ? 'jpg' : ((file.name.split('.').pop() || 'png').toLowerCase().replace(/[^a-z0-9]/g, '') || 'png');
+  const name = Date.now() + '-' + Math.random().toString(36).slice(2, 8) + '.' + ext;
+  await api('/storage/v1/object/' + CONFIG.BUCKET + '/' + name, { method: 'POST', body: blob, headers: { 'Content-Type': blob.type || 'application/octet-stream', 'x-upsert': 'false' } });
+  return CONFIG.URL + '/storage/v1/object/public/' + CONFIG.BUCKET + '/' + name;
+}
+async function afterChange() { await loadProducts(); if (state.modal === 'admin') renderAdmin(); }
+async function saveProduct() {
+  const err = $('formErr'), btn = $('saveBtn'); err.textContent = '';
+  const title = $('f_title').value.trim(); if (!title) { err.textContent = 'اكتب عنوان العرض.'; return; }
+  const price = Number($('f_price').value); if ($('f_price').value !== '' && (!isFinite(price) || price < 0)) { err.textContent = 'السعر غير صالح.'; return; }
+  const payload = { title, game: $('f_game').value, status: $('f_status').value, price: price || 0, description: $('f_desc').value.trim(), image_url: storedImageValue(state.formImages) };
+  btn.disabled = true; btn.textContent = 'جارٍ الحفظ...';
+  try {
+    if (state.editing) await api('/rest/v1/products?id=eq.' + encodeURIComponent(state.editing.id), { method: 'PATCH', json: payload, headers: { Prefer: 'return=minimal' } });
+    else await api('/rest/v1/products', { method: 'POST', json: payload, headers: { Prefer: 'return=minimal' } });
+    toast('تم الحفظ ✓'); state.editing = null; state.formImages = []; state.adminTab = 'products'; await afterChange();
+  } catch (e) { err.textContent = readError(e); btn.disabled = false; btn.textContent = '💾 حفظ'; }
+}
+async function saveSettings(reset) {
+  const err = $('setErr'); if (err) err.textContent = '';
+  const vals = reset ? { ...DEFAULT_SETTINGS } : { phone: $('s_phone').value.replace(/\D/g, ''), announcement: $('s_ann').value.trim(), hero_sub: $('s_sub').value.trim(), hero_text: $('s_text').value.trim() };
+  if (!/^\d{8,15}$/.test(vals.phone)) { if (err) err.textContent = 'رقم واتساب غير صالح (8–15 رقمًا).'; return; }
+  try {
+    await api('/rest/v1/site_settings?on_conflict=key', { method: 'POST', json: Object.entries(vals).map(([key, value]) => ({ key, value })), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } });
+    state.settings = { ...DEFAULT_SETTINGS, ...vals }; applySettings(); render(); renderAdmin(); toast('تم حفظ الإعدادات ✓');
+  } catch (e) { if (err) err.textContent = readError(e); }
+}
+
+/* ============ 9) الأحداث (معالج واحد) ============ */
+document.addEventListener('click', async e => {
+  const el = e.target.closest('[data-action]'); if (!el) return;
+  const a = el.dataset.action, id = el.dataset.id;
+  try {
+    switch (a) {
+      case 'fav': e.stopPropagation(); toggleFav(id); break;
+      case 'details': showDetails(id); break;
+      case 'filter': state.filter = id; render(); break;
+      case 'fav-jump': state.filter = 'favorites'; render(); $('offers').scrollIntoView({ behavior: 'smooth' }); break;
+      case 'reset': $('searchInput').value = ''; $('sortSelect').value = 'featured'; $('priceFilter').value = 'all'; state.filter = 'all'; render(); break;
+      case 'reload': await Promise.all([loadProducts(), loadSettings()]); break;
+      case 'compare-open': showCompare(); break;
+      case 'close-modal': closeModal(); break;
+      case 'open-admin': openAdmin(); break;
+      case 'admin-tab': state.adminTab = id; if (id === 'products') state.editing = null; renderAdmin(); break;
+      case 'admin-new': if (!state.isAdmin) return; state.editing = null; state.formImages = []; state.adminTab = 'form'; renderAdmin(); break;
+      case 'admin-edit': if (!state.isAdmin) return; state.editing = findProduct(id) || null; state.formImages = state.editing ? [...(state.editing.images || parseImageUrls(state.editing.image_url))] : []; state.adminTab = 'form'; renderAdmin(); break;
+      case 'pick-images': if (!state.isAdmin) return; $('imgFile').click(); break;
+      case 'remove-image': if (!state.isAdmin) return; state.formImages.splice(Number(id), 1); refreshImagePicker(); break;
+      case 'admin-delete':
+        if (!state.isAdmin || !confirm('حذف هذا المنتج نهائيًا؟')) return;
+        await api('/rest/v1/products?id=eq.' + encodeURIComponent(id), { method: 'DELETE', headers: { Prefer: 'return=minimal' } });
+        state.comp.delete(id); toast('تم الحذف'); await afterChange(); break;
+      case 'admin-logout': await logout(false); break;
+      case 'settings-reset': if (confirm('استعادة الإعدادات الافتراضية؟')) await saveSettings(true); break;
+    }
+  } catch (err) { console.error(err); toast(readError(err), true); }
+});
+document.addEventListener('change', async e => {
+  const t = e.target; if (!t.matches || !t.matches('[data-action]')) return;
+  const a = t.dataset.action;
+  try {
+    if (a === 'compare') {
+      if (t.checked) { if (state.comp.size >= CONFIG.MAX_COMPARE) { t.checked = false; toast('يمكنك مقارنة ' + CONFIG.MAX_COMPARE + ' حسابات فقط'); return; } state.comp.add(t.dataset.id); }
+      else state.comp.delete(t.dataset.id);
+      $('compareHint').textContent = state.comp.size + ' من ' + CONFIG.MAX_COMPARE + ' للمقارنة';
+    } else if (a === 'admin-status' && state.isAdmin) {
+      await api('/rest/v1/products?id=eq.' + encodeURIComponent(t.dataset.id), { method: 'PATCH', json: { status: t.value }, headers: { Prefer: 'return=minimal' } });
+      toast('تم تحديث الحالة ✓'); await afterChange();
+    } else if (a === 'upload-images' && t.files && t.files.length) {
+      if (!state.isAdmin) { toast('يجب تسجيل الدخول كمدير أولًا.', true); t.value = ''; return; }
+      const files = Array.from(t.files); t.value = '';
+      const bad = files.find(f => !/^image\//.test(f.type));
+      if (bad) { toast('اختر ملفات صور فقط.', true); return; }
+      const gallery = $('imageGallery'); if (gallery) gallery.innerHTML = '<div class="muted" style="grid-column:1/-1;text-align:center;padding:14px">جارٍ رفع الصور... لا تغلق الصفحة.</div>';
+      let added = 0;
+      for (const file of files) {
+        try { const url = await uploadImage(file); state.formImages.push(url); added++; refreshImagePicker(); }
+        catch (err) { console.error(err); toast('تعذر رفع إحدى الصور: ' + readError(err), true); }
+      }
+      if (added) toast('تم رفع ' + added + ' صورة بنجاح ✓');
+      refreshImagePicker();
+    }
+  } catch (err) {
+    console.error(err); toast(readError(err), true);
+    if (a === 'upload-images') { refreshImagePicker(); }
+    if (a === 'admin-status') await afterChange();
+  }
+});
+document.addEventListener('submit', async e => {
+  const f = e.target; e.preventDefault();
+  try {
+    if (f.id === 'loginForm') {
+      const btn = f.querySelector('button[type=submit]'), er = $('loginErr'); er.textContent = ''; btn.disabled = true; btn.textContent = 'جارٍ الدخول...';
+      try {
+        await login($('l_email').value.trim(), $('l_pass').value);
+        updateAdminUI(); await Promise.all([loadProducts(), loadSettings()]); state.adminTab = 'products'; renderAdmin(); toast('مرحبًا بك أيها المدير ✓');
+      } catch (err) { er.textContent = readError(err); btn.disabled = false; btn.textContent = 'دخول'; }
+    } else if (f.id === 'productForm') await saveProduct();
+    else if (f.id === 'settingsForm') await saveSettings(false);
+    else if (f.id === 'sellForm') {
+      const v = id => $(id).value.trim();
+      const msg = ['السلام عليكم SIDOU_SHOP16، أريد تقديم طلب بيع حساب.', 'الاسم: ' + v('sellerName'), 'رقم التواصل: ' + (v('sellerContact') || 'سأوضحه لاحقًا'), 'اللعبة: ' + (GAMES[v('accountType')] || GAMES.other).label, 'العنوان: ' + v('productName'), 'السعر: ' + v('price') + ' دج', 'التفاصيل: ' + (v('details') || 'لم أضف تفاصيل'), 'الصور: ' + v('imageStatus'), 'لن أرسل كلمات مرور أو رموز تحقق.'].join('\n');
+      window.open(waUrl(msg), '_blank', 'noopener');
+    }
+  } catch (err) { console.error(err); toast(readError(err), true); }
+});
+document.addEventListener('error', e => {
+  const img = e.target;
+  if (img && img.tagName === 'IMG' && img.dataset.fb) { const s = document.createElement('span'); s.className = 'emo'; s.textContent = img.dataset.fb; img.replaceWith(s); }
+}, true);
+$('backdrop').addEventListener('click', e => { if (e.target === $('backdrop')) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+['searchInput', 'sortSelect', 'priceFilter'].forEach(id => $(id).addEventListener(id === 'searchInput' ? 'input' : 'change', render));
+window.addEventListener('unhandledrejection', e => console.error('Unhandled:', e.reason));
+
+/* ============ 10) التشغيل ============ */
+async function init() {
+  $('year').textContent = new Date().getFullYear();
+  $('mq').innerHTML = '<span>SIDOU_SHOP16</span><span>★ GAMING ACCOUNTS</span><span>eFOOTBALL</span><span>★ FREE FIRE</span><span>PUBG MOBILE</span><span>★ ALGERIA</span>'.repeat(8);
+  $('accountType').innerHTML = '<option value="">اختر اللعبة</option>' + Object.entries(GAMES).map(([k, g]) => `<option value="${k}">${g.label}</option>`).join('');
+  try { state.favs = new Set(JSON.parse(storage.get('sidou_favs') || '[]').map(String)); } catch (e) { state.favs = new Set(); }
+  applySettings(); render(); renderCatalog(true);
+  await restoreSession(); updateAdminUI();
+  await Promise.all([loadSettings(), loadProducts()]);
+  if (location.hash === '#admin') openAdmin();
+}
+init();
+})();
+</script></body></html>
